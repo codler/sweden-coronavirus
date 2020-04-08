@@ -32,16 +32,6 @@ export class CasesQuery extends BaseQuery<CasesQuery> {
     );
   }
 
-  private _filterDateTo: { [key in number]?: CasesQuery } = {};
-  filterDateTo = (time: number): CasesQuery => {
-    return (
-      this._filterDateTo[time] ??
-      (this._filterDateTo[time] = new CasesQuery(
-        this.data.filter(c => c.date.getTime() <= time)
-      ))
-    );
-  };
-
   toContaminatedSource = (): ContaminatedSource => {
     let entriesContaminatesSource: [
       string,

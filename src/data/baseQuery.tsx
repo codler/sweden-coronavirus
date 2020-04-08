@@ -12,7 +12,8 @@ interface IConstructor<T> {
   new (...args: any[]): T;
 }
 
-interface IBase {
+export interface IBase {
+  filterByDay(day: number): IBase;
   totalCount: number;
 }
 
@@ -57,6 +58,16 @@ abstract class BaseQuery<T extends IBase> {
       ).date)
     );
   }
+
+  private _filterDateTo: { [key in number]?: T } = {};
+  filterDateTo = (time: number): T => {
+    return (
+      this._filterDateTo[time] ??
+      (this._filterDateTo[time] = new this.parentInstance(
+        this.data.filter(c => c.date.getTime() <= time)
+      ))
+    );
+  };
 
   private _age: { [key in string]: T } | undefined;
   public get age(): { [key in string]: T } {

@@ -4498,14 +4498,12 @@ const cases: Case[] = [
   },
   {
     date: new Date("2020-04-03"),
-    persons: 1,
     lan: "Värmlands län",
     source:
       "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
   },
   {
     date: new Date("2020-04-03"),
-    persons: 1,
     lan: "Västernorrlands län",
     source:
       "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
@@ -4534,6 +4532,565 @@ const cases: Case[] = [
     lan: "Jämtlands län",
     source:
       "https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200403coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9520ed3.html"
+  },
+  {
+    persons: 3,
+    date: new Date("2020-04-04"),
+    lan: "Kronobergs län",
+    source: "http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/"
+  },
+  {
+    persons: 30,
+    date: new Date("2020-04-04"),
+    lan: "Gävleborgs län",
+    source:
+      "https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/"
+  },
+  {
+    persons: 3,
+    date: new Date("2020-04-04"),
+    lan: "Västernorrlands län",
+    source:
+      "https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/"
+  },
+  {
+    persons: 23,
+    date: new Date("2020-04-04"),
+    lan: "Västmanlands län",
+    source:
+      "https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/"
+  },
+  {
+    persons: 42,
+    date: new Date("2020-04-04"),
+    lan: "Örebro län",
+    source: "https://www.regionorebrolan.se/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    lan: "Gotlands län",
+    source: "https://gotland.se/106624"
+  },
+  {
+    persons: 21,
+    date: new Date("2020-04-04"),
+    lan: "Skåne län",
+    source:
+      "https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-4-april-2988849"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 13,
+    lan: "Dalarnas län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 8,
+    lan: "Hallands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 12,
+    lan: "Jönköpings län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 14,
+    lan: "Södermanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 187,
+    lan: "Stockholms län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 27,
+    lan: "Uppsala län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 18,
+    lan: "Västerbottens län",
+    source:
+      "https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19"
+  },
+  {
+    date: new Date("2020-04-04"),
+    persons: 28,
+    lan: "Västra Götalands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    lan: "Kronobergs län",
+    source: "http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/"
+  },
+  {
+    persons: 2,
+    date: new Date("2020-04-05"),
+    lan: "Värmlands län",
+    source:
+      "https://regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/"
+  },
+  {
+    persons: 17,
+    date: new Date("2020-04-05"),
+    lan: "Västerbottens län",
+    source:
+      "https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19"
+  },
+  {
+    persons: 20,
+    date: new Date("2020-04-05"),
+    lan: "Örebro län",
+    source: "https://www.regionorebrolan.se/"
+  },
+  {
+    persons: 4,
+    date: new Date("2020-04-05"),
+    lan: "Jämtlands län",
+    source:
+      "https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200405coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9523d66.html"
+  },
+  {
+    persons: 11,
+    date: new Date("2020-04-05"),
+    lan: "Skåne län",
+    source:
+      "https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-april-2988878"
+  },
+  {
+    persons: 98,
+    date: new Date("2020-04-05"),
+    lan: "Östergötlands län",
+    source:
+      "https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    lan: "Blekinge län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 14,
+    lan: "Dalarnas län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    lan: "Hallands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 24,
+    lan: "Jönköpings län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 2,
+    lan: "Kalmar län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 2,
+    lan: "Norrbottens län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 12,
+    lan: "Södermanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 167,
+    lan: "Stockholms län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 19,
+    lan: "Uppsala län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 7,
+    lan: "Västernorrlands län",
+    source:
+      "https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 24,
+    lan: "Västra Götalands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/"
+  },
+  {
+    date: new Date("2020-04-05"),
+    persons: 6,
+    lan: "Västmanlands län",
+    source:
+      "https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 5,
+    lan: "Gävleborgs län",
+    source:
+      "https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 2,
+    lan: "Kronobergs län",
+    source: "http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    lan: "Värmlands län",
+    source:
+      "https://regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 9,
+    lan: "Hallands län",
+    source:
+      "https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 9,
+    lan: "Norrbottens län",
+    source:
+      "https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 9,
+    lan: "Västerbottens län",
+    source:
+      "https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 9,
+    lan: "Västmanlands län",
+    source:
+      "https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 13,
+    lan: "Örebro län",
+    source: "https://www.regionorebrolan.se/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 24,
+    lan: "Östergötlands län",
+    source:
+      "https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 5,
+    lan: "Blekinge län",
+    source:
+      "https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 6,
+    lan: "Skåne län",
+    source:
+      "https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-6-april-2988961"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 21,
+    lan: "Dalarnas län",
+    source:
+      "https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/lagesrapport-covid-19-i-dalarna-6-april/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 10,
+    lan: "Jönköpings län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 6,
+    lan: "Kalmar län",
+    source:
+      "https://www.regionkalmar.se/nyhetslista/tva-nya-dodsfall-i-covid-19-i-lanet/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 28,
+    lan: "Södermanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 127,
+    lan: "Stockholms län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 15,
+    lan: "Uppsala län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    lan: "Värmlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 6,
+    lan: "Västmanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    persons: 44,
+    lan: "Västra Götalands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-06"),
+    lan: "Västernorrlands län",
+    source:
+      "https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/"
+  },
+  {
+    date: new Date("2020-04-06"),
+    lan: "Gotlands län",
+    source: "https://gotland.se/106633"
+  },
+  {
+    persons: 2,
+    date: new Date("2020-04-06"),
+    lan: "Jämtlands län",
+    source:
+      "https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200406coronacovid19regionjamtlandharjedalen.5.4faf1114170d0bf514f327ae.html"
+  },
+  {
+    persons: 7,
+    date: new Date("2020-04-07"),
+    lan: "Kronobergs län",
+    source: "http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/"
+  },
+  {
+    date: new Date("2020-04-07"),
+    lan: "Värmlands län",
+    source:
+      "https://regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/"
+  },
+  {
+    persons: 28,
+    date: new Date("2020-04-07"),
+    lan: "Örebro län",
+    source: "https://www.regionorebrolan.se/"
+  },
+  {
+    persons: 43,
+    date: new Date("2020-04-07"),
+    lan: "Västmanlands län",
+    source:
+      "https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/"
+  },
+  {
+    date: new Date("2020-04-07"),
+    lan: "Blekinge län",
+    source:
+      "https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html"
+  },
+  {
+    persons: 5,
+    date: new Date("2020-04-07"),
+    lan: "Västerbottens län",
+    source:
+      "https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19"
+  },
+  {
+    persons: 53,
+    date: new Date("2020-04-07"),
+    lan: "Östergötlands län",
+    source:
+      "https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/"
+  },
+  {
+    persons: 6,
+    date: new Date("2020-04-07"),
+    lan: "Skåne län",
+    source:
+      "https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-april-2989427"
+  },
+  {
+    persons: 12,
+    date: new Date("2020-04-07"),
+    lan: "Gävleborgs län",
+    source:
+      "https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/"
+  },
+  {
+    persons: 12,
+    date: new Date("2020-04-07"),
+    lan: "Norrbottens län",
+    source:
+      "https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 17,
+    lan: "Dalarnas län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 8,
+    lan: "Gävleborgs län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 5,
+    lan: "Hallands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 21,
+    lan: "Jönköpings län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 2,
+    lan: "Kalmar län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 11,
+    lan: "Skåne län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 26,
+    lan: "Södermanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 136,
+    lan: "Stockholms län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 24,
+    lan: "Uppsala län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 9,
+    lan: "Västernorrlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 1,
+    lan: "Västmanlands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 69,
+    lan: "Västra Götalands län",
+    source:
+      "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 5,
+    lan: "Hallands län",
+    source:
+      "https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/"
+  },
+  {
+    date: new Date("2020-04-07"),
+    persons: 8,
+    lan: "Jämtlands län",
+    source:
+      "https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200407coronacovid19regionjamtlandharjedalen.5.4faf1114170d0bf514f34165.html"
+  },
+  {
+    date: new Date("2020-04-08"),
+    persons: 10,
+    lan: "Kronobergs län",
+    source: "http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/"
+  },
+  {
+    date: new Date("2020-04-08"),
+    persons: 19,
+    lan: "Örebro län",
+    source: "https://www.regionorebrolan.se/"
   }
 ];
 

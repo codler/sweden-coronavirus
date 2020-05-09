@@ -1,0 +1,26 @@
+{
+  "name": "sweden-coronavirus",
+  "version": "1.0.0",
+  "description": "Sweden Coronavirus (COVID-19) data source and tools by Han Lin Yap",
+  "scripts": {
+    "fhm": "ts-node --project tsconfig_node.json download_fhm.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codler/sweden-coronavirus.git"
+  },
+  "keywords": [
+    "coronavirus",
+    "covid19"
+  ],
+  "author": "Han Lin Yap (https://yap.nu)",
+  "homepage": "https://platz.se/coronavirus/",
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^13.13.5",
+    "read-excel-file": "^4.0.6"
+  }
+}

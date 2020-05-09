@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@types/node": "^13.13.5",
-    "read-excel-file": "^4.0.6"
+    "read-excel-file": "^4.0.6",
+    "request": "^2.88.2"
   }
 }

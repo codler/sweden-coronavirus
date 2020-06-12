@@ -20,7 +20,8 @@ request(
         const date = new Date(sheets[6].name);
 
         if (isNaN(date.getTime())) {
-          throw "Invalid date";
+          console.log(new Error("Invalid date"));
+          process.exit(1);
         }
 
         const dateText = formattedDayDate(date);

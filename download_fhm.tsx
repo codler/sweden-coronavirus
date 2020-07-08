@@ -17,7 +17,7 @@ request(
           { getSheets: true }
         );
 
-        const date = new Date(sheets[6].name);
+        const date = new Date(sheets[8].name);
 
         if (isNaN(date.getTime())) {
           console.log(new Error("Invalid date"));

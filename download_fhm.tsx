@@ -50,7 +50,7 @@ request(
       async function (err) {
         let rows = await readXlsxFile(
           "./socialstyrelsen/statistik-covid19-avlidna_latest.xlsx",
-          { sheet: 9 }
+          { sheet: 10 }
         );
 
         const date = new Date(

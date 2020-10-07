@@ -3,6 +3,10 @@ const fs = require("fs");
 const request = require("request");
 const formattedDayDate = require("./src/utils/formattedDayDate.tsx").default;
 
+function fixDateMonthLocale(text) {
+  return text.replace("oktober", "october");
+}
+
 request(
   "https://www.arcgis.com/sharing/rest/content/items/b5e7488e117749c19881cce45db13f7e/data",
   { encoding: "binary" },
@@ -54,9 +58,11 @@ request(
         );
 
         const date = new Date(
-          rows[1][0].replace(
-            "Avlidna i covid-19 enligt dödsorsaksintyg inkomna till den",
-            ""
+          fixDateMonthLocale(
+            rows[1][0].replace(
+              "Avlidna i covid-19 enligt dödsorsaksintyg inkomna fram till den",
+              ""
+            )
           )
         );
 
@@ -93,7 +99,9 @@ request(
         );
 
         const date = new Date(
-          rows[0][0].match(/Socialstyrelsen vid ([^.]*)\./)[1] + " 2020"
+          fixDateMonthLocale(
+            rows[3][0].match(/Socialstyrelsen vid ([^.]*)\./)[1] + " 2020"
+          )
         );
 
         if (isNaN(date.getTime())) {

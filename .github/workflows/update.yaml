@@ -6,7 +6,7 @@ on:
     paths:
       - "triggerUpdate"
   schedule:
-    - cron: "15 12 * * *"
+    - cron: "15 13 * * *"
 
 jobs:
   build:

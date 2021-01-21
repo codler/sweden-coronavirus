@@ -21,7 +21,7 @@ request(
           { getSheets: true }
         );
 
-        const date = new Date(sheets[8].name);
+        const date = new Date(sheets[9].name);
 
         if (isNaN(date.getTime())) {
           console.log(new Error("Folkhalsomyndigheten_Covid19 Invalid date"));

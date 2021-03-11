@@ -57,7 +57,7 @@ request(
           { getSheets: true }
         );
 
-        const date = new Date(sheets[5].name);
+        const date = new Date(sheets[6].name);
 
         if (isNaN(date.getTime())) {
           console.log(new Error("Folkhalsomyndigheten_Covid19_Vaccine Invalid date"));

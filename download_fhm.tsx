@@ -80,7 +80,7 @@ request(
 );
 
 request(
-  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/statistik-over-antal-avlidna-i-covid-19/statistik-covid19-avlidna.xlsx",
+  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/statistik-om-covid-19-avlidna/statistik-covid19-avlidna.xlsx",
   { encoding: "binary" },
   function (error, response, body) {
     fs.writeFile(

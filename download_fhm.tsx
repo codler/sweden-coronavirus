@@ -1,4 +1,12 @@
-const readXlsxFile = require("read-excel-file/node");
+const rxf = require("read-excel-file/node");
+const readXlsxFile = async (...args) => {
+  try {
+    return await rxf(...args);
+  } catch (e) {
+    console.log("Error reading excel file", args[0], e);
+    process.exit(1);
+  }
+};
 const fs = require("fs");
 const request = require("request");
 const formattedDayDate = require("./src/utils/formattedDayDate.tsx").default;
@@ -60,7 +68,9 @@ request(
         const date = new Date(sheets[6].name);
 
         if (isNaN(date.getTime())) {
-          console.log(new Error("Folkhalsomyndigheten_Covid19_Vaccine Invalid date"));
+          console.log(
+            new Error("Folkhalsomyndigheten_Covid19_Vaccine Invalid date")
+          );
           process.exit(1);
         }
 
@@ -80,7 +90,7 @@ request(
 );
 
 request(
-  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/statistik-om-covid-19-avlidna/statistik-covid19-avlidna.xlsx",
+  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/avlidna-i-covid-19/statistik-covid19-avlidna.xlsx",
   { encoding: "binary" },
   function (error, response, body) {
     fs.writeFile(
@@ -121,7 +131,7 @@ request(
 );
 
 request(
-  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/statistik-om-slutenvard-av-patienter-med-covid-19/statistik-covid19-inskrivna.xlsx",
+  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/vard-och-covid-19/statistik-covid19-inskrivna.xlsx",
   { encoding: "binary" },
   function (error, response, body) {
     fs.writeFile(

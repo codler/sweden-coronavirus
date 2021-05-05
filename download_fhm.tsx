@@ -12,7 +12,7 @@ const request = require("request");
 const formattedDayDate = require("./src/utils/formattedDayDate.tsx").default;
 
 function fixDateMonthLocale(text) {
-  return text.replace("oktober", "october");
+  return text.replace("maj", "may").replace("oktober", "october");
 }
 
 request(
@@ -146,7 +146,7 @@ request(
 
         const date = new Date(
           fixDateMonthLocale(
-            rows[3][0].match(/Socialstyrelsen vid ([^.]*)\./)[1] + " 2020"
+            rows[3][0].match(/Socialstyrelsen vid den ([^.]*)\./)[1]
           )
         );
 

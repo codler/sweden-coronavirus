@@ -12,7 +12,7 @@ const request = require("request");
 const formattedDayDate = require("./src/utils/formattedDayDate.tsx").default;
 
 function fixDateMonthLocale(text) {
-  return text.replace("maj", "may").replace("oktober", "october");
+  return text.replace(/maj/i, "may").replace(/oktober/i, "october");
 }
 
 request(
@@ -65,7 +65,7 @@ request(
           { getSheets: true }
         );
 
-        const date = new Date(sheets[6].name);
+        const date = new Date(fixDateMonthLocale(sheets[6].name));
 
         if (isNaN(date.getTime())) {
           console.log(

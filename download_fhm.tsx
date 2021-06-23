@@ -146,7 +146,7 @@ request(
 
         const date = new Date(
           fixDateMonthLocale(
-            rows[3][0].match(/Socialstyrelsen vid den ([^.]*)\./)[1]
+            rows[5][0].match(/Socialstyrelsen vid den ([^.]*)\./)[1]
           )
         );
 

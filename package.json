@@ -16,11 +16,12 @@
   "author": "Han Lin Yap (https://yap.nu)",
   "homepage": "https://platz.se/coronavirus/",
   "devDependencies": {
-    "ts-node": "^8.10.1",
-    "typescript": "^3.8.3"
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@types/node": "^13.13.5",
+    "@codler/utils": "^2.0.1",
+    "@types/node": "^16.10.2",
     "read-excel-file": "^5.2.2",
     "request": "^2.88.2"
   }

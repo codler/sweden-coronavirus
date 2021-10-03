@@ -1,3 +1,5 @@
+import { date as dateUtils } from "@codler/utils";
+
 const rxf = require("read-excel-file/node");
 const readXlsxFile = async (...args) => {
   try {
@@ -9,7 +11,6 @@ const readXlsxFile = async (...args) => {
 };
 const fs = require("fs");
 const request = require("request");
-const formattedDayDate = require("./src/utils/formattedDayDate.tsx").default;
 
 function fixDateMonthLocale(text) {
   return text.replace(/maj/i, "may").replace(/oktober/i, "october");
@@ -36,7 +37,12 @@ request(
           process.exit(1);
         }
 
-        const dateText = formattedDayDate(date);
+        if (date.getTime() < Date.now() - 4 * 24 * 60 * 60 * 1000) {
+          console.log(new Error("Folkhalsomyndigheten_Covid19 Outdated date"));
+          process.exit(1);
+        }
+
+        const dateText = dateUtils.format(date);
 
         fs.writeFile(
           "./folkhalsomyndigheten/Folkhalsomyndigheten_Covid19_" +
@@ -74,7 +80,14 @@ request(
           process.exit(1);
         }
 
-        const dateText = formattedDayDate(date);
+        if (date.getTime() < Date.now() - 9 * 24 * 60 * 60 * 1000) {
+          console.log(
+            new Error("Folkhalsomyndigheten_Covid19_Vaccine Outdated date")
+          );
+          process.exit(1);
+        }
+
+        const dateText = dateUtils.format(date);
 
         fs.writeFile(
           "./folkhalsomyndigheten/Folkhalsomyndigheten_Covid19_Vaccine_" +
@@ -90,7 +103,7 @@ request(
 );
 
 request(
-  "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/avlidna-i-covid-19/statistik-covid19-avlidna.xlsx",
+  "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/statistik/statistik-covid19-avlidna.xlsx",
   { encoding: "binary" },
   function (error, response, body) {
     fs.writeFile(
@@ -117,7 +130,12 @@ request(
           process.exit(1);
         }
 
-        const dateText = formattedDayDate(date);
+        if (date.getTime() < Date.now() - 13 * 24 * 60 * 60 * 1000) {
+          console.log(new Error("statistik-covid19-avlidna Outdated date"));
+          process.exit(1);
+        }
+
+        const dateText = dateUtils.format(date);
 
         fs.writeFile(
           "./socialstyrelsen/statistik-covid19-avlidna_" + dateText + ".xlsx",
@@ -130,6 +148,7 @@ request(
   }
 );
 
+/* 
 request(
   "https://www.socialstyrelsen.se/globalassets/1-globalt/covid-19-statistik/vard-och-covid-19/statistik-covid19-inskrivna.xlsx",
   { encoding: "binary" },
@@ -167,3 +186,4 @@ request(
     );
   }
 );
+*/

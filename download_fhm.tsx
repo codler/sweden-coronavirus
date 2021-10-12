@@ -80,7 +80,7 @@ request(
           process.exit(1);
         }
 
-        if (date.getTime() < Date.now() - 9 * 24 * 60 * 60 * 1000) {
+        if (date.getTime() < Date.now() - 16 * 24 * 60 * 60 * 1000) {
           console.log(
             new Error("Folkhalsomyndigheten_Covid19_Vaccine Outdated date")
           );

@@ -90,6 +90,15 @@ request(
           process.exit(1);
         }
 
+        if (date.getTime() > Date.now()) {
+          console.log(
+            new Error(
+              "Folkhalsomyndigheten_Covid19_Vaccine Invalid future date"
+            )
+          );
+          process.exit(1);
+        }
+
         const dateText = dateUtils.format(date);
 
         fs.writeFile(

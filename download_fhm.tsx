@@ -83,12 +83,12 @@ request(
           process.exit(1);
         }
 
-        // if (date.getTime() < Date.now() - 9 * 24 * 60 * 60 * 1000) {
-        //   console.log(
-        //     new Error("Folkhalsomyndigheten_Covid19_Vaccine Outdated date")
-        //   );
-        //   process.exit(1);
-        // }
+        if (date.getTime() < Date.now() - 9 * 24 * 60 * 60 * 1000) {
+          console.log(
+            new Error("Folkhalsomyndigheten_Covid19_Vaccine Outdated date")
+          );
+          process.exit(1);
+        }
 
         if (date.getTime() > Date.now()) {
           console.log(
@@ -142,10 +142,10 @@ request(
           process.exit(1);
         }
 
-        // if (date.getTime() < Date.now() - 13 * 24 * 60 * 60 * 1000) {
-        //   console.log(new Error("statistik-covid19-avlidna Outdated date"));
-        //   process.exit(1);
-        // }
+        if (date.getTime() < Date.now() - 13 * 24 * 60 * 60 * 1000) {
+          console.log(new Error("statistik-covid19-avlidna Outdated date"));
+          process.exit(1);
+        }
 
         const dateText = dateUtils.format(date);
 

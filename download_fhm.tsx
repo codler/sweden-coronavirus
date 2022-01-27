@@ -74,7 +74,7 @@ request(
           { getSheets: true }
         );
 
-        const date = new Date(fixDateMonthLocale(sheets[7].name));
+        const date = new Date(fixDateMonthLocale(sheets[8].name));
 
         if (isNaN(date.getTime())) {
           console.log(

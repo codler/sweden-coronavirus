@@ -40,7 +40,7 @@ request(
           process.exit(1);
         }
 
-        if (date.getTime() < Date.now() - 4 * 24 * 60 * 60 * 1000) {
+        if (date.getTime() < Date.now() - 7 * 24 * 60 * 60 * 1000) {
           console.log(new Error("Folkhalsomyndigheten_Covid19 Outdated date"));
           process.exit(1);
         }
